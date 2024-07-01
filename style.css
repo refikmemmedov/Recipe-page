@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+
+}
+
+
+@font-face {
+    font-family: 'young-serif';
+    src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+}
+
+body{
+    background-color: hsl(28.89, 52.94%, 90%);
+
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+    opacity: 0.7;
+
+}
+
+h1, h2 {
+    font-family: 'young-serif', sans-serif;
+    font-weight: 400;
+
+}
+
+h2{
+    color: hsl(14, 45%, 36%);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;  
+    
+}
+
+.container{
+    display: grid;
+    grid-column-start: 2;
+    background-color: hsl(0, 0%, 100%);
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h1{
+    font-size: 32px;
+    color: hsl(0, 0%, 0%);
+    margin: 20px 0;
+}
+
+.flist{
+    width: 100%;
+    background-color: hsl(28.89, 52.94%, 90%);
+    border-radius: 5px;
+    margin-bottom: 10px;
+
+}
+
+.flist p{
+    margin: 20px;
+    font-size: 20px;
+    color: hsl(332, 51%, 32%);
+}
+.flist ul, .flist li{
+    margin: 20px;
+}
+
+li span{
+    position: relative;
+    left: 20px;
+}
+
+.ingredients , .ingredients li{
+    margin: 20px;
+}
+
+.ingredients h2{
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.instructions, .instructions li{
+    margin: 20px;
+}
+
+.nutrition {
+    margin: 20px;
+}
+
+.nutrition h2{
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.nutrition p{
+    font-size: 16px;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px;
+
+}
+
+.table p {
+    margin: 15px;
+}
+
+.ltable p {
+    color:hsl(14, 45%, 36%);
+    opacity: 1;
+}
+
+
+@media screen and (max-width: 765px) {
+    .main {
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .container {
+        grid-column-start: 1;
+    }
+}
+
+
+
